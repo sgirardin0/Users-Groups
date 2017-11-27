@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+    	<meta charset="utf-8">
+    	<title>Choosit</title>
+    	<script type="text/javascript" src="js/choosit.js"></script>
+    	<link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+	<body>
+		<main>
+			<div id="modal-popup">
+				<div id="modal-header">
+			        <h4 id="modal-title"></h4> <span id="close-modal"><b>X</b></span>	
+			    </div>
+			    <div id="modal-main">
+			    </div>
+			</div>
+
+			<form method="POST" id="form-search-user" action="">
+			    <input type="text" name="post_search_content" /> 
+				<input type="submit" name="post_search_submit" value="Rechercher" />
+				<input type="button" value="Afficher tout les utilisateurs" onclick="updateUserContent();" />
+			</form>
+
+			<hr />
+
+			<input id="btn-add-user" type="button" value="Ajouter un utilisateur" />
+			<input id="btn-del-users" type="button" value="Supprimer la sélection" />
+			<input id="btn-select" type="button" value="Sélectionner tout" />
+			<input id="btn-unselect" type="button" value="Désélectionner tout" />
+			<br />
+			<br />
+			<table>
+				<thead>
+					<tr>
+						<th>Groupes</th>
+						<th>Lastname Firstname</th>
+						<th>E-mail</th>
+						<th>Actions</th>
+						<th>Select</th>
+					</tr>
+				</thead>
+				<tbody>
+				   
+			    </tbody>
+			</table>
+		</main>
+	</body>
+</html>

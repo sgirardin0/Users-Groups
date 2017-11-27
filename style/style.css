@@ -1,0 +1,96 @@
+body {
+	font-family: "Arial", sans-serif;
+}
+
+table {
+	width:100%;
+}
+
+td, th {
+	text-align: center;
+	padding: 10px;
+	border:1px solid black;
+}
+
+tr:nth-child(2n) {
+    background: rgba(0,0,0,0.7);
+    color:white;
+}
+
+main {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+#modal-popup {
+	display: none;
+	position: fixed;
+	background: white;
+	border:1px solid black;
+	left:50%;
+	top:50%;
+	min-height: 200px;
+	transform: translate(-50%, -50%);
+}
+
+#modal-popup #modal-header {
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+}
+
+#modal-popup #modal-header h4 {
+	margin:0;
+	color:white;
+	padding: 10px;
+	display: inline-block;
+}
+
+#modal-popup #modal-header span#close-modal {
+	display: inline-block;
+	color:white;
+	float:right;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#modal-popup #modal-main ul {
+	margin-top:15px;
+	padding: 10px;
+	list-style: none;
+	font-size: 14px;
+}
+
+#form-add-user {
+	margin:15px;
+	font-size: 14px;
+}
+
+#form-add-user input[name="post_add_submit"] {
+	float: right;
+}
+
+.msg-error {
+	border-radius: 2px;
+	padding: 4px;
+	background-color: rgba(232, 139, 146, 0.8);
+	color:rgb(204, 71, 81);
+	font-size:12px;
+}
+
+.msg-success {
+	border-radius: 2px;
+	padding: 4px;
+	background-color: rgba(109, 196, 115, 0.8);
+	color:rgb(44, 163, 52);
+	font-size:12px;
+}
+
+#btn-select, #btn-unselect {
+	float: right;
+}
+
+.clear::after {
+	display: block;
+	content: '';
+	clear: both;
+}
