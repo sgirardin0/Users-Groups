@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			}
 		}
 	    ajax('./ajax/delete-user.ajax.php', data, function(response) {
-	    	alert(response);
 	    	if(response != 'ERROR') {
 	    		updateUserContent();
 	    	}
